@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.score {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.game-container {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    border: 2px solid black;
+    overflow: hidden;
+    margin: 20px auto;
+    background-color: white;
+}
+.dino {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+}
+.obstacle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 40px;
+    background-color: red;
+}
