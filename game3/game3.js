@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const restartButton = document.getElementById('restart');
     const timerDisplay = document.getElementById('timer');
 
-    const words = ['hat', 'sat', 'rat', 'that', 'mat', 'fat', 'bat', 'cat', 'hat', 'sat', 'rat', 'that',
-        'mat', 'fat', 'bat', 'cat'];
+    const words = ['Beagle', 'Bulldog', 'Poodle', 'Labrador', 'Husky', 'Pug', 'Dalmatian', 'Shih Tzu',
+                   'Beagle', 'Bulldog', 'Poodle', 'Labrador', 'Husky', 'Pug', 'Dalmatian', 'Shih Tzu'];
 
     let flippedCards = [];
     let matchedPairs = 0;
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.classList.add('card');
             card.dataset.name = words[i];
-            card.innerHTML = `<div class="front"></div><div class="back">${words[i]}</div>`;
+            card.innerHTML = `<div class="front">🐾</div><div class="back">${words[i]}</div>`;
             grid.appendChild(card);
         }
     };
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchedPairs++;
             if (matchedPairs === words.length / 2) {
                 clearInterval(timerInterval);
-                setTimeout(() => alert(`Congratulations! You completed the game in ${timer} seconds!`), 500);
+                setTimeout(() => alert(`🎉 Woof woof! You found all the puppies in ${timer} seconds! 🐶`), 500);
             }
         } else {
             card1.classList.remove('flipped');

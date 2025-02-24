@@ -1,12 +1,12 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #FFC0CB;
+    background-color: #F5DEB3; /* Light Tan (Puppy Fur Color) */
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #fff;
+    color: #5A3E36; /* Brown (Cozy Theme) */
 }
 
 .game-container {
@@ -15,13 +15,13 @@ body {
 
 h1 {
     font-size: 2em;
-    color: #FF69B4;
+    color: #8B4513; /* Saddle Brown */
     margin-bottom: 20px;
 }
 
 #timer {
     font-size: 1.2em;
-    color: #333;
+    color: #5A3E36;
     margin: 10px 0;
 }
 
@@ -50,17 +50,18 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 .card .front {
-    background-color: #FF69B4;
+    background-color: #D2B48C; /* Tan */
+    color: #8B4513; /* Brown */
 }
 
 .card .back {
     background-color: #fff;
-    color: #FF69B4;
+    color: #8B4513;
     transform: rotateY(180deg);
 }
 
@@ -78,13 +79,13 @@ h1 {
     font-size: 1em;
     border: none;
     border-radius: 5px;
-    background-color: #FF69B4;
+    background-color: #8B4513;
     color: #fff;
     cursor: pointer;
 }
 
 .start:hover, .restart:hover {
-    background-color: #FF1493;
+    background-color: #5A3E36;
 }
 
 .restart:disabled {
