@@ -1,0 +1,32 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+    .game-container {
+    text-align: center;
+    }
+    .choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    }
+    .choice {
+    background-color: #fff;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    .choice:hover {
+    background-color: #f4f4f4;
+    }
+    .result {
+    margin-top: 30px;
+    }
