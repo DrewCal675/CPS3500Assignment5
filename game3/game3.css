@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5DEB3; /* Light Tan (Puppy Fur Color) */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #5A3E36; /* Brown (Cozy Theme) */
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #8B4513; /* Saddle Brown */
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 1.2em;
+    color: #5A3E36;
+    margin: 10px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card .front,
+.card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card .front {
+    background-color: #D2B48C; /* Tan */
+    color: #8B4513; /* Brown */
+}
+
+.card .back {
+    background-color: #fff;
+    color: #8B4513;
+    transform: rotateY(180deg);
+}
+
+.card.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .back {
+    transform: rotateY(360deg);
+}
+
+.start, .restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #8B4513;
+    color: #fff;
+    cursor: pointer;
+}
+
+.start:hover, .restart:hover {
+    background-color: #5A3E36;
+}
+
+.restart:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+}
