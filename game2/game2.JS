@@ -8,7 +8,7 @@ const choices = ['rock', 'paper', 'scissors'];
 
 const playRound = (playerChoice) => {
     if (playerScore >= 5 || computerScore >= 5) return; // Stop game if there's already a winner
-    
+
     const computerChoice = choices[Math.floor(Math.random() * 3)];
     let resultMessage = "";
 
