@@ -2,23 +2,35 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="game2.css">
 <title>Rock, Paper, Scissors</title>
 </head>
 <body>
 <div class="game-container">
-<h1>Rock, Paper, Scissors</h1>
-<div class="choices">
-<div class="choice" id="rock" onclick="playRound('rock')">Rock</div>
-<div class="choice" id="paper" onclick="playRound('paper')">Paper</div>
-<div class="choice" id="scissors" onclick="playRound('scissors')">Scissors</div>
+    <h1>Rock, Paper, Scissors</h1>
+    
+    <div class="scores">
+        <p>Player: <span id="player-score">0</span> | Computer: <span id="computer-score">0</span></p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="rock" onclick="playRound('rock')">
+            <img src="https://www.coolkidfacts.com/wp-content/uploads/2014/11/rocks.png" alt="Rock">
+        </div>
+        <div class="choice" id="paper" onclick="playRound('paper')">
+            <img src="https://www.cellmark.com/wp-content/uploads/2019/09/printing-and-writing-papers.jpg" alt="Paper">
+        </div>
+        <div class="choice" id="scissors" onclick="playRound('scissors')">
+            <img src="https://freebie.photography/office/scissors.jpg" alt="Scissors">
+        </div>
+    </div>
+
+    <div class="result">
+        <h2 id="result-text">Choose an option to start the game</h2>
+    </div>
 </div>
-<div class="result">
-<h2 id="result-text">Choose an option to start the game</h2>
-</div>
-</div>
+
 <script src="game2.js"></script>
 </body>
 </html>
